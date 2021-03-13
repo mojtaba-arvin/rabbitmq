@@ -1,0 +1,2 @@
+# rabbitmq
+Simple RabbitMQ Service
