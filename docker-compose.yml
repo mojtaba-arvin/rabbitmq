@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+    rabbitmq:
+        image: 'rabbitmq:3.8.14-management'
+        env_file:
+            - ./.docker-compose/.env
+        volumes:
+            - rabbitmq-volume:/var/lib/rabbitmq/
+        expose:
+            - "5672"
+            # HTTP API clients, management UI and rabbitmqadmin
+            # (only if the management plugin is enabled)
+            - "15672"
+networks:
+    rabbitmq-network:
+        driver: bridge
+
+volumes:
+    rabbitmq-volume:
