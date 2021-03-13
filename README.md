@@ -1,5 +1,4 @@
-# RabbitMQ
-Simple RabbitMQ Service
+# Simple RabbitMQ Service
 
 ### Setup environment
 
