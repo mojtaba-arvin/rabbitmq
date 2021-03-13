@@ -12,8 +12,11 @@ services:
             # HTTP API clients, management UI and rabbitmqadmin
             # (only if the management plugin is enabled)
             - "15672"
+        networks:
+            - broker-network
+
 networks:
-    rabbitmq-network:
+    broker-network:
         driver: bridge
 
 volumes:

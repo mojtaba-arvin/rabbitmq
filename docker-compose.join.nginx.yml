@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    rabbitmq:
+        networks:
+            - reverse-proxy-network
+networks:
+    proxy-network:
+        external:
+            name: nginx_reverse-proxy-network
+##                  ^             ^
+##          name: of project    network created inside that project
