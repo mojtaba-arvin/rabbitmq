@@ -25,7 +25,7 @@ docker-compose -f docker-compose.yml -f docker-compose.join.nginx.yml up -d
 To use management UI in local environment, there is a sample compose file ( `docker-compose.local.yml` ), to map ports.
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose.join.local.yml up -d
+docker-compose -f docker-compose.yml -f docker-compose.local.yml up -d
 ```
 
 then,the management UI can be accessed using a Web browser at `http://localhost:15672/`.
